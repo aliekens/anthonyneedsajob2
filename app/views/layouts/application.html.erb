@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+  	<meta charset="utf-8" />
+
+  	<!-- Uncomment to make IE8 render like IE7 -->
+  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+  	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta property="og:title" content="#AnthonyNeedsAJob" />
+	<meta property="og:url" content="http://anthonyneedsajob.com" />
+	<meta property="og:image" content="http://anthonyneedsajob.com/assets/screenshot.png" />
+	<meta property="og:description" content="Anthony will soon start on an adventure in an exciting startup, but in the mean time, he has no real source of income. Since Anthony can not sit on his hands, he is now looking for partners to tackle exciting technical problems together, for a few days, a few weeks or longer." />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  	<title>#AnthonyNeedsAJob</title>
+
+  	<%= stylesheet_link_tag    "application" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <%= yield %>
+
+    
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
