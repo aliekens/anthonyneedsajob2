@@ -1,5 +1,6 @@
 Anthonyneedsajob2::Application.routes.draw do
   get "welcome/index"
+  get "welcome/banner"
   post "welcome/newoffer"
   root :to => 'welcome#index'
 

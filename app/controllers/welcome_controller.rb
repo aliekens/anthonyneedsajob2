@@ -17,4 +17,8 @@ class WelcomeController < ApplicationController
       format.js
     end
   end
+  
+  def banner
+  end
+  
 end
